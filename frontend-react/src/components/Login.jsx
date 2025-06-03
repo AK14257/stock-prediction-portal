@@ -28,7 +28,7 @@ const Login = () => {
       localStorage.setItem('refreshToken',response.data.refresh)
       console.log('Login Successfull');
       setIsLoggedIn(true)
-      navigate('/')
+      navigate('/dashboard')
       
       
     }catch(error){
@@ -69,7 +69,7 @@ const Login = () => {
               {error && <div className='text-danger'>{error}</div>}
               {loading ? (
                 <button type="submit" className='btn btn-info d-block mx-auto' disabled><FontAwesomeIcon icon={faSpinner} spin/>
-                  Loging In...
+                  Logging In...
                 </button>
               ) : (
                 <button type="submit" className='btn btn-info d-block mx-auto'>

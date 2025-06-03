@@ -17,7 +17,7 @@ const Main = () => {
             make informed decisions. While predictions aren't guaranteed, 
             such systems enhance decision-making in the volatile and complex world of stock trading.
           </p>
-          <Button text='Login' class='btn-outline-warning' />
+          <Button text='Explore' class='btn-outline-warning' url='/dashboard' />
         </div>
       </div>
     </>
